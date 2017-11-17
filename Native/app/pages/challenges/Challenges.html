@@ -1,0 +1,15 @@
+<ActionBar title="All challenges">
+  <NavigationButton text="Back">
+  </NavigationButton>
+</ActionBar>
+<StackLayout>
+
+  <StackLayout>
+<ListView [items]="Challenges">
+  <template let-item="item">
+    <label [text] ="item.nom"  [nsRouterLink]="['/detailChallenges',item.id]"> </label>
+
+  </template>
+</ListView>
+</StackLayout>
+</StackLayout>

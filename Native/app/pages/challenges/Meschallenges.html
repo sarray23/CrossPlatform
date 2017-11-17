@@ -1,0 +1,15 @@
+<ActionBar title="My challenges">
+  <NavigationButton text="Back">
+  </NavigationButton>
+</ActionBar>
+<StackLayout>
+
+  <StackLayout>
+<ListView [items]="MyChallenges">
+  <template let-item="item">
+    <label [text] ="item.nom" > </label>
+
+  </template>
+</ListView>
+</StackLayout>
+</StackLayout>

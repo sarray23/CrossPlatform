@@ -1,0 +1,12 @@
+<StackLayout>
+
+  <Label text="Authentification" class="title"></Label>
+
+  <TextField hint="Email Address" keyboardType="email"
+    autocorrect="false" autocapitalizationType="none"
+    [(ngModel)]="user.email"></TextField>
+  <TextField hint="Password" secure="true"
+   [(ngModel)]="user.password"></TextField>
+  <Button text="Sign in" class="submit-button" (tap)="connectSarra()"></Button>
+
+</StackLayout>

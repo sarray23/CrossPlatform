@@ -1,0 +1,21 @@
+<ActionBar title="Mes produits">
+  <NavigationButton text="Back">
+  </NavigationButton>
+</ActionBar>
+<StackLayout>
+<StackLayout>
+  <TextField hint="Name" keyboardType="TEXT"
+    autocorrect="false" autocapitalizationType="none" hint="Product name...."
+    [(ngModel)]="prod.name"></TextField>
+  <TextField hint="Product price..." secure="false" [(ngModel)]="prod.price"></TextField>
+  <Button text="add..." class="submit-button" (tap)="InsertProduct()"></Button>
+  </StackLayout>
+  <StackLayout>
+<ListView [items]="produits">
+  <template let-item="item">
+    <label [text] ="item.name" > </label>
+    
+  </template>
+</ListView>
+</StackLayout>
+</StackLayout>
